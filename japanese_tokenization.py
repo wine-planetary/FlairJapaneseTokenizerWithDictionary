@@ -19,7 +19,7 @@ class JapaneseTokenizerWithDictionary(Tokenizer):
     """
 
     def __init__(self, tokenizer: str, user_dictionary_path: str, sudachi_mode: str="A"):
-        super(JapaneseTokenizer, self).__init__()
+        super(JapaneseTokenizerWithDictionary, self).__init__()
 
         available_tokenizers = ["mecab", "janome", "sudachi"]
 
