@@ -18,7 +18,7 @@ class JapaneseTokenizerWithDictionary(Tokenizer):
             https://github.com/himkt/konoha
     """
 
-    def __init__(self, tokenizer: str, sudachi_mode: str="A", user_dictionary_path: str):
+    def __init__(self, tokenizer: str, user_dictionary_path: str, sudachi_mode: str="A"):
         super(JapaneseTokenizer, self).__init__()
 
         available_tokenizers = ["mecab", "janome", "sudachi"]
